@@ -251,6 +251,15 @@ if "Chronic Kidney Disease (CKD)" in selected_conditions:
     egfr = st.number_input("eGFR (ml/min/1.73 m²)", min_value=0.0, step=0.1)
     if egfr:
         st.info(f"Entered eGFR: {egfr} ml/min/1.73 m²")
+# Dementia/Stroke/Neurological Disease Labs
+inr = albumin = None
+if "Dementia/Stroke/Neurological Disease" in selected_conditions:
+    
+    albumin = st.number_input("Serum Albumin (g/dL)", min_value=0.0, step=0.1)
+    
+    if albumin:
+        st.info(f"Entered Albumin: {albumin} g/dL")
+
 
 # === CALCULATION AND ASSESSMENT ===
 st.header("Assessment Summary")
