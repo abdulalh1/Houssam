@@ -411,7 +411,7 @@ else:
     elif 2 <= flags < 4:
         st.markdown("🔵 **Partial criteria met — monitor closely and reassess periodically.**")
     else:
-        st.markdown("🟢 **Patient is stable — continue Level 3 care.**")
+        st.markdown("🟢 **Based on the available information, the patient does not meet criteria for transition to Level 4 care.**")
 
 
 
